@@ -3,13 +3,13 @@ $(document).ready(function(){
 	$("#project-sections").css("height", $("#project-titles").css("height"));
 	
 	dict = { 
-     	item1: "section1",
-     	item2: "section2",
+     	itm-jaie: "sec-jaie",
+     	itm-guac: "sec-guac",
      	item3: "section3",
      	item4: "section4",
      	item5: "section5",
-     	item6: "section6",
-     	item7: "section7",
+     	itm-musical-blocks: "sec-musical-blocks",
+     	itm-pauseture: "sec-pauseture",
      	item8: "section8"
 	};
 
