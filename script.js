@@ -3,14 +3,14 @@ $(document).ready(function(){
 	$("#project-sections").css("height", $("#project-titles").css("height"));
 	
 	dict = { 
-     	itm-jaie: "sec-jaie",
-     	itm-guac: "sec-guac",
-        itm-musical-blocks: "sec-musical-blocks",
-        itm-pauseture: "sec-pauseture",
-     	itm-brands: "sec-brands",
-     	itm-genders: "sec-genders",
-     	itm-echo: "sec-echo",
-     	itm-esw: "sec-esw"
+     	itm1: "sec1",
+     	itm2: "sec2",
+        itm3: "sec3",
+        itm4: "sec4",
+     	itm5: "sec5",
+     	itm6: "sec6",
+     	itm7: "sec7",
+     	itm8: "sec8"
 	};
 
     $("#myname").hover(
