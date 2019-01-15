@@ -10,43 +10,55 @@ $(document).ready(function(){
      	itm5: "sec5",
      	itm6: "sec6",
      	itm7: "sec7",
-     	itm8: "sec8"
+     	itm8: "sec8",
+        itm9: "sec9"
 	};
 
-    $("#myname").hover(
-        function(){
-            $("div#project-sections").show();
-            $("#bio").fadeIn();
-        }, function(){
-            $("#bio").hide();
-    });
+    // $("#myname").hover(
+    //     function(){
+    //         $("div#project-sections").show();
+    //         $("#bio").show();
+    //     }, function(){
+    //         $("#bio").hide();
+    // });
 
-    $("#myname").click(function(){
-        $("div#project-sections").show();
-        $('html, body').animate({
-            scrollTop: $("#bio").offset().top
-        }, 500)
-    });
+    // $("#myname").click(function(){
+    //     $("div#project-sections").show();
+    //     $('html, body').animate({
+    //         scrollTop: $("#bio").offset().top
+    //     }, 500)
+    // });
+
+    var currentID;
+    var pastID;
 
     $("#project-titles p").hover(
     	function(){
             $("div#project-sections").show();
-	    	var projectID = this.id;
-	    	var sectionID = '#' + dict[projectID];
-	    	// console.log(sectionID);
-	        $(sectionID).fadeIn();
-        }, function(){
-	        var projectID = this.id;
-	    	var sectionID = '#' + dict[projectID];
-	        $(sectionID).hide();
-    });
 
+	    	currentID = this.id;
+
+            if (currentID != pastID) {
+                // console.log('change section');
+                var pastSection = '#' + dict[pastID];
+                $(pastSection).hide();
+            }
+
+	    	var currentSection = '#' + dict[currentID];
+            $(currentSection).show();
+            
+            pastID = currentID;
+	        
+        }
+    );
+
+    // for mobile
     $("#project-titles p").click(function() {
         $("div#project-sections").show();
         var projectID = this.id;
         var sectionID = '#' + dict[projectID];
         // console.log(sectionID);
-        $(sectionID).fadeIn();
+        $(sectionID).show();
 
         $('html, body').animate({
             scrollTop: $("#project-sections").offset().top
