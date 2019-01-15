@@ -5,12 +5,12 @@ $(document).ready(function(){
 	dict = { 
      	itm-jaie: "sec-jaie",
      	itm-guac: "sec-guac",
-     	item3: "section3",
-     	item4: "section4",
-     	item5: "section5",
-     	itm-musical-blocks: "sec-musical-blocks",
-     	itm-pauseture: "sec-pauseture",
-     	item8: "section8"
+        itm-musical-blocks: "sec-musical-blocks",
+        itm-pauseture: "sec-pauseture",
+     	itm-brands: "sec-brands",
+     	itm-genders: "sec-genders",
+     	itm-echo: "sec-echo",
+     	itm-esw: "sec-esw"
 	};
 
     $("#myname").hover(
