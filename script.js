@@ -11,7 +11,8 @@ $(document).ready(function(){
      	itm6: "sec6",
      	itm7: "sec7",
      	itm8: "sec8",
-        itm9: "sec9"
+        itm9: "sec9",
+        itm10: "sec10"
 	};
 
     // $("#myname").hover(

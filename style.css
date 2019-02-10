@@ -105,7 +105,7 @@ img {
   margin: auto;
   margin-top: auto;
 }
-#bio, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9 {
+#bio, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
   display: none;
   position: absolute;
   padding-right: 10%;
