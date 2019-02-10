@@ -15,7 +15,7 @@ body {
   background-color: #ffffff;
 }
 img {
-  max-height: 50vh;
+  /*max-height: 50vh;*/
   padding-bottom: 1em;
 }
 iframe {
@@ -57,14 +57,9 @@ span {
   color: #63c8af;
 }
 
-
-.top {
-  float: left;
-}
 div.name {
   margin: 0;
 }
-
 .content {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -84,11 +79,6 @@ div#project-titles {
   margin-top: 0.7em;
   margin-bottom: 1em;
 }
-/*@media screen and (min-width: 800px)  {
-  .top, .links, #project-titles {
-    position: absolute;
-  }
-}*/
 div#project-sections {
   padding-bottom: 2em;
   display: none;
@@ -105,9 +95,24 @@ img {
   margin: auto;
   margin-top: auto;
 }
-#bio, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
+#bio, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10{
   display: none;
   position: absolute;
-  padding-right: 10%;
+  padding-right: 30px;
 }
 
+@media screen and (min-width: 1200px)  {
+  .header {
+    position: fixed;
+    padding-left: 1em;
+  }
+  #project-titles {
+    position: fixed;
+    top: 8em;
+    left: 1em;
+  }
+  #project-sections {
+    position: absolute;
+    right: 1em;
+  }
+}

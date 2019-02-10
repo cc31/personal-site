@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    $("div#project-sections").show();
+    $("#sec10").show();
+
 	$("#project-sections").css("height", $("#project-titles").css("height"));
 	
 	dict = { 
@@ -30,26 +33,21 @@ $(document).ready(function(){
     //     }, 500)
     // });
 
-    var currentID;
+    var currentID = itm10;
     var pastID;
 
     $("#project-titles p").hover(
     	function(){
-            $("div#project-sections").show();
-
+            $("#sec10").hide();
 	    	currentID = this.id;
-
             if (currentID != pastID) {
                 // console.log('change section');
                 var pastSection = '#' + dict[pastID];
                 $(pastSection).hide();
             }
-
 	    	var currentSection = '#' + dict[currentID];
             $(currentSection).show();
-            
             pastID = currentID;
-	        
         }
     );
 
