@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Overpass:300,400&display=swap');
 
 html, body, main {
   height: 100%;
@@ -11,7 +11,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Overpass', sans-serif;
+/*  font-family: 'Cardo', serif;*/
   background-color: #ffffff;
 }
 img {
@@ -33,6 +34,7 @@ h2 {
 }
 p {
   font-size: 1.2em;
+  font-weight: 300;
 }
 a {
   color: #888;
@@ -56,6 +58,9 @@ span {
 .link-color{
   color: #63c8af;
 }
+#top-links p{
+  font-size: 1em;
+}
 
 div.name {
   margin: 0;
@@ -69,7 +74,8 @@ div#project-titles {
 }
 #project-titles p{
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin-bottom: 1em;
   /*float: right;*/
 }
 #project-titles p:hover{
@@ -80,12 +86,12 @@ div#project-titles {
   margin-bottom: 1em;
 }
 div#project-sections {
-  padding-bottom: 2em;
+  padding-bottom: 2.5em;
   display: none;
 }
 #project-sections p {
   font-size: 1em;
-  color: #333;
+  color: #444;
   /*text-align: center;*/
   /*font-style: italic;*/
 }
