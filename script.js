@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("div#project-sections").show();
-    $("#sec12").show();
+    $("#sec2").show();
 
 	$("#project-sections").css("height", $("#project-titles").css("height"));
 	
@@ -35,7 +35,7 @@ $(document).ready(function(){
     //     }, 500)
     // });
 
-    var currentID = itm12;
+    var currentID = itm2;
     var pastID;
 
     $("#project-titles p").hover(
