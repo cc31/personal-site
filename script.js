@@ -40,7 +40,7 @@ $(document).ready(function(){
 
     $("#project-titles p").hover(
     	function(){
-            $("#sec12").hide();
+            $("#sec2").hide();
 	    	currentID = this.id;
             console.log(currentID);
             if (currentID != pastID) {
